@@ -30,9 +30,8 @@ function listHabits(habit = [], habitsList) {
             <input type="checkbox" data-index=${i} id="habit${i}" ${
         habit.completed ? "checked" : ""
       } />
-            <label for="habit${i}"><span>${habit.reps}/${habit.totalCounts} ${
-        habit.timeframe
-      }</span> ${habit.text}</label>
+            <label for="habit${i}"><span>${habit.reps}/${habit.totalCounts} 
+      </span> ${habit.text}</label>
         <button class="delete" data-index=${i} id="delete${i}">Delete</button>
         </li>
         `;
