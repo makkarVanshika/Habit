@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Habit Tracker</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="CSS/Index.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1><center>Habit Tracker</center></h1>
+            <nav class="navbar">
+                <a class = "index" href="Index.html"> Add Habit</a>
+                <a class = "daily" href="Daily.html"> Daily Progress</a>
+                <a class = "weekly" href="Weekly.html"> Weekly Progress</a>
+            </nav>
+        </header>
+
+        <main>
+            <form class="habit-entry" method="post">
+                <br>
+                <div id ="habit">
+                    <label> Habit: </label>
+                    <input type="text" name="habit" placeholder="Enter Habit Name" required/>
+                </div>
+                <br>
+                <div id="frequency">
+                    <label> Frequency: </label>
+                    <input type="number" name="frequency" placeholder="Repetitions" min="1" required/>
+                </div>
+                <br>
+                <div id="reset">
+                    <input type="reset">
+                </div>
+                <br>
+                <div id="submit">
+                    <input type="submit">
+                </div>
+            </form>
+
+            <Section>
+                <h2> Habits:</h2>
+                <ul class="habit-list">
+                </ul>
+            </Section>
+           
+
+            
+        </main>
+        <footer>
+
+        </footer>
+        <script src="index.js"></script>
+    </body>
+
+</html>

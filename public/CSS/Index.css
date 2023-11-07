@@ -1,0 +1,26 @@
+.index{
+    background-color: #E9969F;
+    color: white;
+}
+
+.daily{
+    color: black;
+}
+
+.weekly{
+    color: black;
+}
+
+.habit-entry{
+    background-color: #EFBEC3;
+}
+
+label, div{
+    margin: 5px;
+    width: 10px;
+    display: inline-block;
+}
+
+.delete{
+    display:block;
+}
