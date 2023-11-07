@@ -2,8 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-const MongoClient = require('mongodb').MongoClient;
-const mongoURL = "mongodb+srv://sketchuphandin:4OVZFzByi8GTSgxj@cluster0.12eiowb.mongodb.net/habitList?retryWrites=true&w=majority";
+//const MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb');
+const mongoURL = "mongodb+srv://sketchuphandin:4OVZFzByi8GTSgxj@cluster0.12eiowb.mongodb.net/habitName?retryWrites=true&w=majority";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -20,8 +21,8 @@ app.post('/submit', (req, res) => {
   MongoClient.connect(mongoURL, (err, client) => {
     if (err) throw err;
 
-    const db = client.db('mydb');
-    const collection = db.collection('mycollection');
+    const db = client.db('habitList');
+    const collection = db.collection('habitName');
 
     const data = {
       name: req.body.habit,
