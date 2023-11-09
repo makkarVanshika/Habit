@@ -24,3 +24,16 @@ label, div{
 .delete{
     display:block;
 }
+
+.habit-list{
+    list-style-type: none;
+   
+}
+
+li {
+    display: block;
+    background-color: #f6ccd1;
+    border: solid #EFBEC3;
+    padding: 2vw;
+    margin: 1vw;
+}
