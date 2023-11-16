@@ -4,7 +4,7 @@ const app = express();
 
 //const MongoClient = require('mongodb').MongoClient;
 const MongoClient = require('mongodb');
-const mongoURL = "mongodb+srv://sketchuphandin:@cluster0.12eiowb.mongodb.net/habitName?retryWrites=true&w=majority";
+const mongoURL = 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
