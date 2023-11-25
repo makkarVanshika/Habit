@@ -1,10 +1,14 @@
+//import * as dotenv from 'dotenv';
+
 const express = require('express');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+dotenv.config();
 const app = express();
 
 //const MongoClient = require('mongodb').MongoClient;
 const MongoClient = require('mongodb');
-const mongoURL = 
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -18,7 +22,7 @@ app.listen(3000, () => {
 });
 
 app.post('/submit', (req, res) => {
-  MongoClient.connect(mongoURL, (err, client) => {
+  MongoClient.connect(process.env.URI, (err, client) => {
     if (err) throw err;
 
     const db = client.db('habitList');

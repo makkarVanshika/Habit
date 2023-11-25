@@ -1,0 +1,21 @@
+.weekly{
+    background-color: #E9969F;
+    color: white;
+}
+
+.daily{
+    color: black;
+}
+
+.index{
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
