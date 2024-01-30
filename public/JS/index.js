@@ -6,12 +6,11 @@ function addHabit(e) {
   e.preventDefault();
   const text = this.querySelector("[name=habit]").value;
   const totalCounts = +this.querySelector("[name=frequency]").value;
-  //const timeframe = this.querySelector("[name=timeframe]").value;
+
   const habit = {
     text: text,
     reps: 0,
     totalCounts: totalCounts,
-    //timeframe: timeframe,
     completed: false,
   };
 
